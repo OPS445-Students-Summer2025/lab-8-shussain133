@@ -1,0 +1,34 @@
+
+PLAY [vmlab] *******************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [Update Apache] ***********************************************************
+ok: [vmlab]
+
+TASK [Install EPEL] ************************************************************
+ok: [vmlab]
+
+TASK [Remove tree package] *****************************************************
+ok: [vmlab]
+
+TASK [Set hostname] ************************************************************
+changed: [vmlab]
+
+TASK [Create user with sudo access] ********************************************
+ok: [vmlab]
+
+TASK [Create lab directories] **************************************************
+ok: [vmlab] => (item=1)
+ok: [vmlab] => (item=2)
+ok: [vmlab] => (item=3)
+ok: [vmlab] => (item=4)
+ok: [vmlab] => (item=5)
+ok: [vmlab] => (item=6)
+ok: [vmlab] => (item=7)
+ok: [vmlab] => (item=8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
